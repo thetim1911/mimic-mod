@@ -4,6 +4,9 @@ Every mob (all MobEntity, vanilla or modded) copies what the nearest player does
 
 - Armor and held items: they wear/hold exactly what you wear/hold, and drop it when they die
   (this duplicates items; turn off with /mimic drops off).
+- Walking: mobs walk forward/back/left/right with you, jump when you jump, and look where you look
+  (yaw and pitch). Their own AI is overridden while you are near, so they stand still when you stand still.
+  Turn off with /mimic move off.
 - Dropping (Q / Ctrl+Q): every mob throws its held item the same way (one item, or the whole stack).
   Dropping from inside the inventory screen is not copied.
 - Placing blocks: you place a block, each mob places the same block at the same offset from ITS feet.
@@ -14,6 +17,7 @@ Every mob (all MobEntity, vanilla or modded) copies what the nearest player does
 Commands (no permission needed):
 - /mimic on | off
 - /mimic drops on | off   (default on)
+- /mimic move on | off    (default on)
 - /mimic range <blocks>   (0 = every loaded mob, which is the default)
 
 ## Build
