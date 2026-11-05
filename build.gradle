@@ -9,6 +9,20 @@ base {
 	archivesName = project.archives_base_name
 }
 
+// Read sources straight from the repo root (all files are uploaded flat).
+sourceSets {
+	main {
+		java {
+			srcDirs = ['.']
+			include '*.java'
+		}
+		resources {
+			srcDirs = ['.']
+			include 'fabric.mod.json', 'copycatmobs.mixins.json'
+		}
+	}
+}
+
 repositories {
 }
 
